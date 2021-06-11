@@ -1,9 +1,9 @@
 type SomeFunction = (arg: number) => SomeFunction;
 
-export function sum(...args: number[]): SomeFunction | number {
-  if (args.length === 0) {
-    return 0;
-  }
+export function sum(...args: number[]): SomeFunction {
+  // if (args.length === 0) {
+  //     return 0;
+  // }
   const arg = args[0];
   let result = arg;
   let t = 0;
